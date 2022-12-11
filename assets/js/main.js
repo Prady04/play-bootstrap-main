@@ -13,12 +13,7 @@
       ud_header.classList.remove("sticky");
     }
 
-    // === logo change
-    if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/logo/3LOGO.png";
-    } else {
-      logo.src = "assets/images/logo/3LOGO.png";
-    }
+    
 
     // show or hide the back-top-top button
     const backToTop = document.querySelector(".back-to-top");
@@ -47,13 +42,6 @@
     navbarCollapse.classList.toggle("show");
   });
 
-  // ===== submenu
-  const submenuButton = document.querySelectorAll(".nav-item-has-children");
-  submenuButton.forEach((elem) => {
-    elem.querySelector("a").addEventListener("click", () => {
-      elem.querySelector(".ud-submenu").classList.toggle("show");
-    });
-  });
 
   // ===== wow js
   new WOW().init();
